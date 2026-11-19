@@ -1,18 +1,18 @@
 import { IMPOSSIBLE, VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '0.6.4:0',
+  version: '0.6.5:0',
   releaseNotes: {
     en_US:
-      'Power targets now show exact watts on small machines like Bitaxe (under 500 W), so a 120 W heater reads 120 W instead of 100 W. Big ASICs keep the familiar 50 W steps. Full release notes: https://github.com/heatpunk/blisspoint/releases/tag/v0.6.4',
+      'TEST BUILD for Bitaxe play/pause fix. Pause and resume now work on AxeOS 2.14 and newer (verified against v2.15.4): the proxy talks to the miner\'s own pause/resume endpoints instead of refusing. The button also shows the correct paused state. Sideload this package to test; it is not published to the registry.',
     es_ES:
-      'Los objetivos de potencia ahora muestran vatios exactos en máquinas pequeñas como Bitaxe (menos de 500 W): un calentador de 120 W muestra 120 W en lugar de 100 W. Los ASIC grandes mantienen los pasos de 50 W. Notas completas: https://github.com/heatpunk/blisspoint/releases/tag/v0.6.4',
+      'COMPILACIÓN DE PRUEBA para el arreglo de pausa/reanudación en Bitaxe. Pausar y reanudar ya funcionan en AxeOS 2.14 y posteriores (verificado con v2.15.4). Instala este paquete manualmente para probar; no está publicado en el registro.',
     de_DE:
-      'Leistungsziele zeigen jetzt exakte Watt bei kleinen Geräten wie Bitaxe (unter 500 W): Ein 120-W-Heizer zeigt 120 W statt 100 W. Große ASICs behalten die vertrauten 50-W-Schritte. Vollständige Versionshinweise: https://github.com/heatpunk/blisspoint/releases/tag/v0.6.4',
+      'TEST-BUILD für die Bitaxe-Pause/Fortsetzen-Korrektur. Pause und Fortsetzen funktionieren jetzt auf AxeOS 2.14 und neuer (geprüft mit v2.15.4). Dieses Paket zum Testen sideloaden; es ist nicht im Registry veröffentlicht.',
     pl_PL:
-      'Cele mocy pokazują teraz dokładne waty na małych urządzeniach, takich jak Bitaxe (poniżej 500 W): grzejnik 120 W pokazuje 120 W zamiast 100 W. Duże ASIC-i zachowują znane kroki co 50 W. Pełne informacje o wydaniu: https://github.com/heatpunk/blisspoint/releases/tag/v0.6.4',
+      'WERSJA TESTOWA poprawki pauzy/wznowienia dla Bitaxe. Pauza i wznowienie działają teraz na AxeOS 2.14 i nowszych (zweryfikowano z v2.15.4). Zainstaluj ten pakiet ręcznie do testów; nie jest opublikowany w rejestrze.',
     fr_FR:
-      'Les consignes de puissance affichent désormais des watts exacts sur les petites machines comme Bitaxe (moins de 500 W) : un radiateur de 120 W affiche 120 W au lieu de 100 W. Les gros ASIC conservent les pas de 50 W. Notes complètes : https://github.com/heatpunk/blisspoint/releases/tag/v0.6.4',
+      'VERSION TEST pour le correctif pause/reprise sur Bitaxe. La pause et la reprise fonctionnent désormais sur AxeOS 2.14 et plus récent (vérifié avec v2.15.4). Installez ce paquet manuellement pour tester ; il n’est pas publié dans le registre.',
   },
   migrations: {
     up: async ({ effects }) => {},
