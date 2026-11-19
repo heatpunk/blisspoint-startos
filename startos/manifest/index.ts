@@ -15,7 +15,7 @@ export const manifest = setupManifest({
     blisspoint: {
       source: {
         dockerTag:
-          'ghcr.io/heatpunk/blisspoint:0.6.4@sha256:b4d2dc52ba0327097c124f98ad6dd642451f217c8aac270becbdbe2a478090a1',
+          'ghcr.io/heatpunk/blisspoint:0.6.5-test.1@sha256:932b972378759b2354d656ca3caaddcc0f5516e06f15834d85eeefeb2c2fc477',
       },
       arch: ['x86_64', 'aarch64'],
       emulateMissing: false,
