@@ -1,18 +1,18 @@
 import { IMPOSSIBLE, VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '0.6.4:0',
+  version: '0.6.5:1',
   releaseNotes: {
     en_US:
-      'Power targets now show exact watts on small machines like Bitaxe (under 500 W), so a 120 W heater reads 120 W instead of 100 W. Big ASICs keep the familiar 50 W steps. Full release notes: https://github.com/heatpunk/blisspoint/releases/tag/v0.6.4',
+      'TEST BUILD with everything since 0.6.4: miners are discovered across all LAN subnets (fix by b-rowan, PR #91), the LAN scan drops from minutes to seconds, Bitaxe pause/resume works on AxeOS 2.14 and newer, and all dependencies are refreshed. Sideload this package to test on hardware; it is not published to any registry.',
     es_ES:
-      'Los objetivos de potencia ahora muestran vatios exactos en máquinas pequeñas como Bitaxe (menos de 500 W): un calentador de 120 W muestra 120 W en lugar de 100 W. Los ASIC grandes mantienen los pasos de 50 W. Notas completas: https://github.com/heatpunk/blisspoint/releases/tag/v0.6.4',
+      'COMPILACIÓN DE PRUEBA con todo desde 0.6.4: los mineros se descubren en todas las subredes LAN (arreglo de b-rowan, PR #91), el escaneo LAN pasa de minutos a segundos, la pausa/reanudación de Bitaxe funciona en AxeOS 2.14 y posteriores, y todas las dependencias están actualizadas. Instala este paquete manualmente para probar en hardware; no está publicado en ningún registro.',
     de_DE:
-      'Leistungsziele zeigen jetzt exakte Watt bei kleinen Geräten wie Bitaxe (unter 500 W): Ein 120-W-Heizer zeigt 120 W statt 100 W. Große ASICs behalten die vertrauten 50-W-Schritte. Vollständige Versionshinweise: https://github.com/heatpunk/blisspoint/releases/tag/v0.6.4',
+      'TEST-BUILD mit allem seit 0.6.4: Miner werden in allen LAN-Subnetzen gefunden (Fix von b-rowan, PR #91), der LAN-Scan schrumpft von Minuten auf Sekunden, Bitaxe-Pause/Fortsetzen funktioniert auf AxeOS 2.14 und neuer, und alle Abhängigkeiten sind aktualisiert. Dieses Paket zum Testen auf Hardware sideloaden; es ist in keinem Registry veröffentlicht.',
     pl_PL:
-      'Cele mocy pokazują teraz dokładne waty na małych urządzeniach, takich jak Bitaxe (poniżej 500 W): grzejnik 120 W pokazuje 120 W zamiast 100 W. Duże ASIC-i zachowują znane kroki co 50 W. Pełne informacje o wydaniu: https://github.com/heatpunk/blisspoint/releases/tag/v0.6.4',
+      'WERSJA TESTOWA ze wszystkim od 0.6.4: koparki są wykrywane we wszystkich podsieciach LAN (poprawka b-rowan, PR #91), skanowanie LAN skraca się z minut do sekund, pauza/wznowienie Bitaxe działa na AxeOS 2.14 i nowszych, a wszystkie zależności są odświeżone. Zainstaluj ten pakiet ręcznie do testów na sprzęcie; nie jest opublikowany w żadnym rejestrze.',
     fr_FR:
-      'Les consignes de puissance affichent désormais des watts exacts sur les petites machines comme Bitaxe (moins de 500 W) : un radiateur de 120 W affiche 120 W au lieu de 100 W. Les gros ASIC conservent les pas de 50 W. Notes complètes : https://github.com/heatpunk/blisspoint/releases/tag/v0.6.4',
+      'VERSION TEST avec tout depuis 0.6.4 : les mineurs sont découverts sur tous les sous-réseaux LAN (correctif de b-rowan, PR #91), le scan LAN passe de minutes à secondes, la pause/reprise Bitaxe fonctionne sur AxeOS 2.14 et plus récent, et toutes les dépendances sont actualisées. Installez ce paquet manuellement pour tester sur matériel ; il n’est publié dans aucun registre.',
   },
   migrations: {
     up: async ({ effects }) => {},
